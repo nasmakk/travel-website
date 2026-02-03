@@ -1,0 +1,339 @@
+/* 🌍 Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------- HEADER SECTION ---------------- */
+.container-fluid {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+.header-left img {
+  width: 120px;
+}
+
+.header-right ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.header-right ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-right ul li a:hover {
+  color: orange;
+}
+
+/* ---------------- HERO / RAJASTAN SECTION ---------------- */
+.rajastan {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 50px 20px;
+}
+
+.rajastan h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.rajastan p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.rajastan-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rajastan-img img {
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.rajastan-img img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- CARD SECTION ---------------- */
+.card-section {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.card-section h1 {
+  color: #222;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #f2f2f2;
+  width: 300px;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ---------------- CUSTOMER SECTION ---------------- */
+.customer {
+  background-color: #f8f8f8;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.customer h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.customer p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.customer-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.customer-div {
+  width: 250px;
+  height: 200px;
+  background-color: #e2e2e2;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.customer-div:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- FOOTER SECTION ---------------- */
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.cardfoot {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.cardfoot h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: orange;
+}
+
+.cardfoot p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* ---------------- SOCIAL ICONS ---------------- */
+.wtp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.wtp-icon img {
+  width: 80px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.wtp-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* ====================================================== */
+/* 🌐 RESPONSIVE DESIGN SECTION */
+/* ====================================================== */
+
+/* -------- Tablets (≤ 1024px) -------- */
+@media (max-width: 1024px) {
+  .header-right ul {
+    justify-content: center;
+  }
+
+  .rajastan-img img {
+    width: 45%;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .customer-div {
+    width: 45%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .cardfoot {
+    width: 45%;
+  }
+}
+
+/* -------- Mobiles (≤ 768px) -------- */
+@media (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .header-left img {
+    width: 100px;
+  }
+
+  .header-right ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .rajastan p {
+    font-size: 14px;
+  }
+
+  .rajastan-img img {
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .customer-div {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardfoot {
+    width: 90%;
+    text-align: center;
+  }
+
+  .wtp-icon img {
+    width: 60px;
+    height: 40px;
+  }
+}
+
+/* -------- Small Mobiles (≤ 480px) -------- */
+@media (max-width: 480px) {
+  .header-right ul li a {
+    font-size: 16px;
+  }
+
+  .rajastan h3 {
+    font-size: 18px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .customer h1 {
+    font-size: 20px;
+  }
+
+  .customer p {
+    font-size: 13px;
+  }
+
+  .cardfoot h3 {
+    font-size: 18px;
+  }
+
+  .cardfoot p {
+    font-size: 12px;
+  }
+
+  .wtp-icon img {
+    width: 50px;
+    height: 35px;
+  }
+}
